@@ -4,32 +4,32 @@
 <meta charset="utf-8" />
 <title>トップ - みなくんのMOIS生向けブログ</title>
 </head>
-<body style="background: lightblue;">
+<body style="background: lightblue; display: none;" id="page">
 <script>
 if( localStorage.password == "373scratch" ){
 document.getElementById.style.display = null;
 }else{
 localStorage.password = prompt("パスワードを入力してください。");
 if( localStorage.password == "373scratch" ){
-document.getElementById("page").style.display = null;
+document.getElementById("page").style.display = "block";
 }else{
 alert("パスワードが間違っています。");
 };
 };
 </script>
-<h1 id="page" style="display: none;">みなくんのMOIS生向けブログ</h1>
-<span style="cursor: pointer; color: blue; text-decoration: underline; display: none;" id="page" onclick="location.href = 'https://mois.minakun.com/pages/001/';">【生徒向け】classiで見ましたを押した人のリストと日時を表示する方法</span><br>
-<span style="cursor: pointer; color: blue; text-decoration: underline; display: none;" id="page" onclick="location.href = 'https://mois.minakun.com/pages/002/';">【コロナ】4/1以降のマスク　付ける?付けない?</span><br>
-<span id="page" style="display:none;">【執筆中】生徒会選挙、当選者はいかに??<span><br>
-<h2 id="page" style="display: none;">お知らせ</h2>
-<span id="page" style="display: none;">記事にコメントを書くことができるようになります。</span><br>
-<span id="page" style="display: none;">詳細は機能実装時にお伝えします。</span><br>
-<span id="page" style="display: none;">追記:詳細が少し決まりました。</span><br>
-<span id="page" style="display: none;">投稿したコメントは、みなくんが承認すると掲載されます。</span><br>
-<span id="page" style="display: none;">投稿したコメントが掲載されるまでに数時間~1日ほどかかる場合があります</span><br>
-<span id="page" style="display: none;">(土日は更新がされないため、最大で3~4日お待たせする場合もあります。</span><br>
-<span id="page" style="display: none;">このページにコメントフォームをつけたので、試しにコメントしてみてください。</span><br>
-<div id="page" style="background: white; display: none;" width="100%">
+<h1>みなくんのMOIS生向けブログ</h1>
+<span style="cursor: pointer; color: blue; text-decoration: underline; " onclick="location.href = 'https://mois.minakun.com/pages/001/';">【生徒向け】classiで見ましたを押した人のリストと日時を表示する方法</span><br>
+<span style="cursor: pointer; color: blue; text-decoration: underline; " onclick="location.href = 'https://mois.minakun.com/pages/002/';">【コロナ】4/1以降のマスク　付ける?付けない?</span><br>
+<span style="display:none;">【執筆中】生徒会選挙、当選者はいかに??<span><br>
+<h2>お知らせ</h2>
+<span>記事にコメントを書くことができるようになります。</span><br>
+<span>詳細は機能実装時にお伝えします。</span><br>
+<span>追記:詳細が少し決まりました。</span><br>
+<span>投稿したコメントは、みなくんが承認すると掲載されます。</span><br>
+<span>投稿したコメントが掲載されるまでに数時間~1日ほどかかる場合があります</span><br>
+<span>(土日は更新がされないため、最大で3~4日お待たせする場合もあります。</span><br>
+<span>このページにコメントフォームをつけたので、試しにコメントしてみてください。</span><br>
+<div style="background: white; " width="100%">
 <h2>コメントフォーム</h2>
 <form>
 <label>名前</label><input type="text" name="content" /><br />
